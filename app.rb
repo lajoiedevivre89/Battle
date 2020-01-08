@@ -17,9 +17,14 @@ class Battle < Sinatra::Base
   get '/play' do
     @player_1_name = session[:player_1_name]
     @player_2_name = session[:player_2_name]
-    erb :play # has a single responsibility
+    erb(:play) # has a single responsibility
   end
 
+  get '/attacks' do
+    @player_1_name = session[:player_1_name]
+    @player_2_name = session[:player_2_name]
+    erb(:attacks)
+  end
   
 
   
