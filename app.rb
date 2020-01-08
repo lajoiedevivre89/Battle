@@ -18,7 +18,9 @@ class Battle < Sinatra::Base
     @player_1_name = session[:player_1_name]
     @player_2_name = session[:player_2_name]
     erb :play # has a single responsibility
-  end 
+  end
+
+  
 
   
 

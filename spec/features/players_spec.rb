@@ -6,4 +6,4 @@ feature 'enter players' do
     click_button 'Submit'
     expect(page).to have_content 'Vish vs. Emily'
   end
-end 
+end
